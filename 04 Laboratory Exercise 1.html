@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04 Laboratory Exercise 1</title>
+</head>
+<body>
+    <script>
+        function find_longest_word(str)
+        {
+            var array1 = str.match(/\w[a-z]{0,}/gi);
+            var result = array1[0];
+            for(var x = 1 ; x < array1.length ; x++)
+            {
+                if(result.length < array1[x].length){result = array1[x];
+                } 
+                    result = array1[x];
+                }
+                return result;
+            }
+            var stringVal = prompt("Enter a string value");
+            alert(find_longest_word(stringVal));
+    </script>
+</body>
+</html>
